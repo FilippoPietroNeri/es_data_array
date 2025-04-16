@@ -1,4 +1,3 @@
-product list ts
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../app.interfaces';
