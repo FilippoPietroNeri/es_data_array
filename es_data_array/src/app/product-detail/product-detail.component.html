@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header bg-info text-white">
+        <h3>Dettagli Prodotto</h3>
+    </div>
+    <div class="card-body" *ngIf="product; else noProduct">
+        <h4>{{product.name}}</h4>
+        <p><strong>Prezzo:</strong> {{product.price}}</p>
+        <p><strong>Descrizione:</strong> {{product.description}}</p>
+    </div>
+    <ng-template #noProduct>
+        <div class="card-body">
+            <div class="alert alert-warning">
+                Nessun prodotto selezionato. Clicca su un prodotto dalla lista per visualizzare i dettagli.
+            </div>
+        </div>
+    </ng-template>
+</div>
